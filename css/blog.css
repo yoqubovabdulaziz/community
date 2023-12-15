@@ -36,7 +36,7 @@
 *::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: url(../../assets/fonts/Poppins/Poppins-Medium.ttf);
+  font-family: Poppins500;
 }
 
 html {
@@ -230,4 +230,121 @@ button {
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#navbar {
+  position: fixed;
+  right: 0;
+  left: 0;
+  height: 84px;
+  background-color: #FFF;
+  z-index: 100;
+}
+#navbar .nav {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#navbar .nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 32px;
+}
+@media (max-width: 830px) {
+  #navbar .nav__list {
+    display: none;
+  }
+}
+#navbar .nav__list a {
+  color: #394149;
+  font-family: Poppins600;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+#navbar .nav__list .nav-clone {
+  color: #F58A07;
+  font-family: Poppins600;
+  font-size: 16px;
+  line-height: 106.5%;
+  padding: 17.5px 32px;
+  background-color: rgba(245, 138, 7, 0.1);
+  border-radius: 31px;
+}
+#navbar .nav__res {
+  display: none;
+}
+#navbar .nav__res i {
+  font-size: 30px;
+}
+@media (max-width: 830px) {
+  #navbar .nav__res {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 15px;
+  }
+}
+
+#navbar-responsive {
+  position: fixed;
+  top: -100%;
+  bottom: 0;
+  left: 0;
+  height: 430px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 45px;
+  padding-left: 40px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  background-color: #FFF;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 100;
+}
+@media (min-width: 500px) {
+  #navbar-responsive ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+#navbar-responsive img {
+  padding-right: 70px;
+  margin-bottom: 30px;
+}
+#navbar-responsive li {
+  margin-bottom: 10px;
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#navbar-close {
+  position: absolute;
+  right: 15px;
+  top: 35px;
+  font-size: 25px;
+  color: red;
 }
