@@ -7,6 +7,7 @@
   height: 84px;
   background-color: var.$white-color;
   z-index: 100;
+  transition: 0.5s;
   .nav {
     height: 100%;
     display: flex;
@@ -89,4 +90,10 @@
   top: 35px;
   font-size: 25px;
   color: red;
+}
+
+#navbar.navbar-shrink {
+    height: 60px;
+    box-shadow: 0 0 20px 1px var.$dark-color;
+    background-color: #ddd;
 }

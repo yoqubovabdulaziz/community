@@ -1,6 +1,16 @@
 @use "../global";
 @use "../utils/variables" as var;
 
+#hero,
+#support,
+#solution,
+#energy,
+#service,
+#vacancy,
+#latest {
+  transition: 0.5s;
+}
+
 #hero {
   background-color: var.$bgc2-white;
   .hero {
@@ -501,10 +511,10 @@
       &__card {
         max-width: 400px;
         background-color: var.$white-color;
-        border-radius: 20px;
+        border-radius: 15px;
         &__content {
-            padding-left: 32px;
-            padding-bottom: 32px;
+          padding-left: 32px;
+          padding-bottom: 32px;
         }
         img {
           margin-bottom: 33px;
