@@ -713,3 +713,17 @@ video {
 .animation-title span:nth-child(9) {
   animation-delay: 4.2s;
 }
+
+.anim {
+  overflow: hidden;
+  position: relative;
+    h1 {
+      position: absolute;
+      color: var.$white-color;
+      top: 20px;
+      left: 20px;
+      font-size: 40px;
+      color: red;
+    }
+}
+
