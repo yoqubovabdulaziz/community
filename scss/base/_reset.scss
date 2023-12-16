@@ -31,8 +31,8 @@ button {
 
 #backtop {
   position: fixed;
-  right: -35px;
-  bottom: -30px;
+  right: -40px;
+  bottom: -35px;
   font-size: 35px;
   color: black;
   transition: 0.5s;
@@ -43,6 +43,8 @@ button {
   right: 30px;
   bottom: 30px;
 }
+
+
 
 // LOADER
 
@@ -156,7 +158,8 @@ button {
 .dark #solution,
 .dark #energy,
 .dark #service,
-.dark #latest{
+.dark #latest,
+.dark #about {
   background-color: var.$dark-color;
   transition: 0.5s;
 }
@@ -167,8 +170,10 @@ button {
 .dark #solution .solution *,
 .dark #energy .energy *,
 .dark #service .service *,
-.dark #latest .support * {
-  color: var.$white-color
+.dark #latest .support *,
+.dark #hero *,
+.dark #about * {
+  color: var.$white-color;
 }
 
 .dark #solution .solution__row__card,
@@ -181,8 +186,10 @@ button {
 .dark #energy .energy h6,
 .dark #service .service a,
 .dark #latest .support__row__card a,
-.dark #latest .support__row__card:hover * 
- {
+.dark #latest .support__row__card:hover * {
   color: var.$primary-color;
 }
 
+.dark svg {
+  fill: white;
+}
