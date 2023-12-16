@@ -15,6 +15,19 @@
     <link rel="stylesheet" href="../css/service.min.css" />
   </head>
   <body>
+    <section id="loading">
+      <video src="../smoke.mp4" autoplay muted></video>
+      <h1 class="loading-title">
+        <span>S</span>
+        <span>A</span>
+        <span>I</span>
+        <span>D</span>
+        <span>A</span>
+        <span>Z</span>
+        <span>I</span>
+        <span>Z</span>
+      </h1>
+    </section>
     <header id="navbar">
       <nav class="container__1320 nav">
         <a href="#">
@@ -64,8 +77,10 @@
               <a href="#">Work With Us</a>
             </div>
             <div class="hero__right">
-              <img src="../assets/images/services-hero.png" alt="img">
-              <img class="hero__right__circle" src="../assets/images/service-circle.svg" alt=" /">
+              <div class="hero__right__img">
+                <div class="hero__right__hover"></div>
+                <img src="../assets/images/services-hero.png" alt="img" />
+              </div>
             </div>
           </div>
         </div>
@@ -213,6 +228,11 @@
         </div>
       </section>
     </main>
-    <script src="../js/common.js"></script>
+    <section>
+      <div class="container__1320 animation">
+        <canvas id="canvas"></canvas>
+      </div>
+    </section>
+    <script src="../js/service.js"></script>
   </body>
 </html>

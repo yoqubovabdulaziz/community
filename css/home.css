@@ -88,7 +88,7 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  z-index: 100;
+  z-index: 1000;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -210,6 +210,53 @@ button {
   width: 30px;
 }
 
+.dark #navbar.navbar-shrink {
+  background-color: black;
+  -webkit-box-shadow: 0 0 20px 1px #FFF;
+          box-shadow: 0 0 20px 1px #FFF;
+}
+
+.dark #navbar {
+  -webkit-box-shadow: 0 0 15px 2px #FFF;
+          box-shadow: 0 0 15px 2px #FFF;
+}
+
+.dark #navbar,
+.dark #hero,
+.dark #support,
+.dark #solution,
+.dark #energy,
+.dark #service,
+.dark #latest {
+  background-color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.dark #hero .hero *,
+.dark #navbar .nav *,
+.dark #support .support *,
+.dark #solution .solution *,
+.dark #energy .energy *,
+.dark #service .service *,
+.dark #latest .support * {
+  color: #FFF;
+}
+
+.dark #solution .solution__row__card,
+.dark #service .service,
+.dark #latest .support__row__card {
+  background: #333;
+}
+
+.dark #support .support a,
+.dark #energy .energy h6,
+.dark #service .service a,
+.dark #latest .support__row__card a,
+.dark #latest .support__row__card:hover * {
+  color: #F58A07;
+}
+
 .container__1320,
 .container__792 {
   margin-right: auto;
@@ -239,6 +286,8 @@ button {
   height: 84px;
   background-color: #FFF;
   z-index: 100;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 #navbar .nav {
   height: 100%;
@@ -341,12 +390,30 @@ button {
   border-radius: 10px;
 }
 
-#navbar-close {
+#navbar-close i {
   position: absolute;
   right: 15px;
   top: 35px;
   font-size: 25px;
   color: red;
+}
+
+#navbar.navbar-shrink {
+  height: 60px;
+  -webkit-box-shadow: 0 0 20px 1px black;
+          box-shadow: 0 0 20px 1px black;
+  background-color: #ddd;
+}
+
+#hero,
+#support,
+#solution,
+#energy,
+#service,
+#vacancy,
+#latest {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 #hero {
@@ -959,7 +1026,7 @@ button {
 #latest .support__row__card {
   max-width: 400px;
   background-color: #FFF;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 #latest .support__row__card__content {
   padding-left: 32px;
