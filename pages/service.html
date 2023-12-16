@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>COMMUNITY | SAIDAZIZ</title>
     <link
       rel="stylesheet"
@@ -77,19 +78,19 @@
     <div id="navbar-responsive">
       <div class="close-mark">
         <button id="navbar-close">
-          <img src="../assets/images/close.svg" alt="">
+          <img src="../assets/images/close.svg" alt="" />
         </button>
       </div>
       <a href="#">
-        <img src="../assets/images/nav-logo.svg" alt="logotip" />
+        <img class="logo" src="../assets/images/nav-logo.svg" alt="logotip" />
       </a>
       <ul class="nav__list">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="careers-1.html">Careers</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="../pages/about.html">About Us</a></li>
+        <li><a href="../pages/careers-1.html">Careers</a></li>
+        <li><a href="../pages/service.html">Services</a></li>
+        <li><a href="../pages/blog.html">Blog</a></li>
+        <li><a href="../pages/contact.html">Contact us</a></li>
         <li><a class="nav-clone" href="#">Clone project</a></li>
       </ul>
     </div>
@@ -263,22 +264,26 @@
       <div class="container__1320 footer">
         <div class="footer__row">
           <div class="footer__start">
-            <img class="footer__logo" src="../assets/images/footer-logo.svg" alt="logotip">
+            <img
+              class="footer__logo"
+              src="../assets/images/footer-logo.svg"
+              alt="logotip"
+            />
             <h3>Bespoke software solutions</h3>
             <div class="footer__start__brands">
-              <img src="../assets/images/facebook.svg" alt="">
-              <img src="../assets/images/youtube.svg" alt="">
-              <img src="../assets/images/instagram.svg" alt="">
-              <img src="../assets/images/twitter.svg" alt="">
+              <img src="../assets/images/facebook.svg" alt="" />
+              <img src="../assets/images/youtube.svg" alt="" />
+              <img src="../assets/images/instagram.svg" alt="" />
+              <img src="../assets/images/twitter.svg" alt="" />
             </div>
           </div>
           <div class="footer__center">
             <ul class="footer__center__column">
               <li><h5>Company</h5></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="careers-1.html">Careers</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="blog.html">Blog</a></li>
+              <li><a href="../pages/about.html">About Us</a></li>
+              <li><a href="../pages/careers-1.html">Careers</a></li>
+              <li><a href="../pages/service.html">Services</a></li>
+              <li><a href="../pages/blog.html">Blog</a></li>
             </ul>
             <ul class="footer__center__column">
               <li><h5>Connect</h5></li>
@@ -290,7 +295,7 @@
             <h5>Join Newsletter</h5>
             <form>
               <div class="email">
-                <input type="email" placeholder="Type email here">
+                <input type="email" placeholder="Type email here" />
               </div>
               <div class="subscribe">
                 <button>Subscribe</button>
@@ -307,11 +312,9 @@
         </div>
       </div>
     </footer>
-    <section>
-      <div class="container__1320 animation">
-        <canvas id="canvas"></canvas>
-      </div>
-    </section>
+    <div class="container__full animation">
+      <canvas id="canvas"></canvas>
+    </div>
     <script src="../js/service.js"></script>
     <script src="../js/common.js"></script>
   </body>

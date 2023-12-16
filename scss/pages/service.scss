@@ -327,6 +327,39 @@ video{
     width: 100%;
 }
 
+#mode-btn {
+  position: fixed;
+  right: 0;
+  top: 120px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background-color: var.$primary-color;
+  z-index: 100;
+  img {
+    width: 30px;
+  }
+}
+
+#navbar.navbar-shrink {
+    height: 60px;
+    box-shadow: 0 0 5px 5px black;
+    background-color: var.$primary-color;
+}
+
+#navbar.navbar-shrink a,
+#navbar.navbar-shrink .nav-clone{
+  color: white;
+}
+
+#navbar.navbar-shrink .nav-clone{
+  border: 2px solid black;
+}
+
 @media (min-width: 800px) {
   .hero {
     &__all {
