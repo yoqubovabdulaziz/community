@@ -44,8 +44,6 @@ button {
   bottom: 30px;
 }
 
-
-
 // LOADER
 
 #loading {
@@ -138,7 +136,12 @@ button {
   z-index: 100;
   img {
     width: 30px;
+    transition: 0.5s;
   }
+}
+
+#mode-btn:hover img {
+  transform: rotate(730deg);
 }
 
 // DARK MODE
@@ -191,5 +194,13 @@ button {
 }
 
 .dark svg {
-  fill: white;
+  fill: var.$white-color;
+}
+
+.dark .brand-svg {
+  fill: var.$primary-color;
+}
+
+.dark .solution__row__card {
+  box-shadow: 0 0 20px 1px var.$white-color;
 }

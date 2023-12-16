@@ -208,6 +208,13 @@ button {
 }
 #mode-btn img {
   width: 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#mode-btn:hover img {
+  -webkit-transform: rotate(730deg);
+          transform: rotate(730deg);
 }
 
 .dark #navbar.navbar-shrink {
@@ -261,7 +268,16 @@ button {
 }
 
 .dark svg {
-  fill: white;
+  fill: #FFF;
+}
+
+.dark .brand-svg {
+  fill: #F58A07;
+}
+
+.dark .solution__row__card {
+  -webkit-box-shadow: 0 0 20px 1px #FFF;
+          box-shadow: 0 0 20px 1px #FFF;
 }
 
 .container__1320,
@@ -323,11 +339,51 @@ button {
   }
 }
 #navbar .nav__list a {
+  position: relative;
+  display: block;
   color: #394149;
   font-family: Poppins600;
   font-size: 16px;
   line-height: 24px;
   text-transform: capitalize;
+}
+#navbar .nav__list a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #F58A07;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+#navbar .nav__list a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #F58A07;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+#navbar .nav__list a:hover {
+  color: #F58A07;
+}
+#navbar .nav__list a:hover:before,
+#navbar .nav__list a:hover:after {
+  -webkit-transform: scaleX(1.01);
+          transform: scaleX(1.01);
 }
 #navbar .nav__list .nav-clone {
   color: #F58A07;
@@ -337,6 +393,19 @@ button {
   padding: 17.5px 32px;
   background-color: rgba(245, 138, 7, 0.1);
   border-radius: 31px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+#navbar .nav__list .nav-clone:hover {
+  color: #FFF;
+  background-color: #F58A07;
+}
+#navbar .nav__list .nav-clone:after,
+#navbar .nav__list .nav-clone:before {
+  display: none;
+}
+#navbar .nav__list .active-nav {
+  color: #F58A07;
 }
 #navbar .nav__res {
   display: none;
@@ -541,6 +610,12 @@ footer {
   padding: 17px 32px;
   border-radius: 31px;
   background-color: #F58A07;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.footer__end .subscribe button:hover {
+  background-color: #FFF;
+  color: #F58A07;
 }
 .footer__bottom {
   display: -webkit-box;

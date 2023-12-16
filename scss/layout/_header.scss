@@ -21,11 +21,44 @@
         display: none;
       }
       a {
+        position: relative;
+        display: block;
         color: #394149;
         font-family: var.$secondary-font;
         font-size: 16px;
         line-height: 24px;
         text-transform: capitalize;
+      }
+      a:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var.$primary-color;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: all 0.6s;
+      }
+      a:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var.$primary-color;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: all 0.6s;
+      }
+      a:hover {
+        color: var.$primary-color;
+      }
+      a:hover:before,
+      a:hover:after {
+        transform: scaleX(1.01);
       }
       .nav-clone {
         color: var.$primary-color;
@@ -35,6 +68,18 @@
         padding: 17.5px 32px;
         background-color: rgba(245, 138, 7, 0.1);
         border-radius: 31px;
+        transition: 0.5s;
+      }
+      .nav-clone:hover {
+        color: var.$white-color;
+        background-color: var.$primary-color;
+      }
+      .nav-clone:after,
+      .nav-clone:before {
+        display: none;
+      }
+      .active-nav {
+        color: var.$primary-color
       }
     }
     &__res {
@@ -67,10 +112,10 @@
   transition: 0.5s;
   z-index: 100;
   ul {
-    @media (min-width:500px) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
+    @media (min-width: 500px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
   .logo {
     padding-right: 70px;
@@ -104,8 +149,7 @@
 }
 
 #navbar.navbar-shrink {
-    height: 60px;
-    box-shadow: 0 0 20px 1px var.$dark-color;
-    background-color: #ddd;
+  height: 60px;
+  box-shadow: 0 0 20px 1px var.$dark-color;
+  background-color: #ddd;
 }
-
