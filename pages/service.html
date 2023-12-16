@@ -1,150 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>COMMUNITY | SAIDAZIZ</title>
-    <link rel="stylesheet" href="../css/service.min.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/service.min.css" />
+  </head>
+  <body>
+    <header id="navbar">
+      <nav class="container__1320 nav">
+        <a href="#">
+          <img src="../assets/images/nav-logo.svg" alt="logotip" />
+        </a>
+        <ul class="nav__list">
+          <li><a href="pages/about.html">About Us</a></li>
+          <li><a href="pages/careers-1.html">Careers</a></li>
+          <li><a href="pages/service.html">Services</a></li>
+          <li><a href="pages/blog.html">Blog</a></li>
+          <li><a href="pages/contact.html">Contact us</a></li>
+          <li><a class="nav-clone" href="#">Clone project</a></li>
+        </ul>
+        <div class="nav__res">
+          <button id="navbar-open">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <div id="navbar-responsive">
+      <button id="navbar-close">
+        <i class="fa-regular fa-circle-xmark"></i>
+      </button>
+      <a href="#">
+        <img src="../assets/images/nav-logo.svg" alt="logotip" />
+      </a>
+      <ul class="nav__list">
+        <li><a href="../pages/about.html">About Us</a></li>
+        <li><a href="../pages/careers-1.html">Careers</a></li>
+        <li><a href="../pages/service.html">Services</a></li>
+        <li><a href="../pages/blog.html">Blog</a></li>
+        <li><a href="../pages/contact.html">Contact us</a></li>
+        <li><a class="nav-clone" href="#">Clone project</a></li>
+      </ul>
+    </div>
     <main>
-        <section id="hero">
-            <div class="container__1320">
-                <div class="hero__all">
-                    <div class="hero__left">
-                        <h1> We serve clients with ground breaking solutions
-                        </h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo odio, sagittis quis ornare quis.</p>
-                        <a href="#">Work With Us</a>
-                    </div>
-                    <div class="hero__right">
-                        <img src="../assets/images/services-hero.png" alt="img">
-                    </div>
-                </div>
+      <section id="hero">
+        <div class="container__1320">
+          <div class="hero__all">
+            <div class="hero__left">
+              <h1>We serve clients with ground breaking solutions</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                leo odio, sagittis quis ornare quis.
+              </p>
+              <a href="#">Work With Us</a>
             </div>
-        </section>
-        <section id="about">
-            <div class="container__1320">
-                <div class="about__1">
-                    <div class="about__1__left">
-                        <img src="../assets/images/services-business.png" alt="img">
-                    </div>
-                    <div class="about__1__right">
-                        <h2>Business strategy</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo odio, sagittis quis ornare quis.met, consectetur
-                        adipiscing elit. Aliquam leo odio, sagittis quis ornare quis.</p>
-                        <ul>
-                            <li><span>•</span>Cost strategy</li>
-                            <li><span>•</span>Differentiated product or service strategy</li>
-                            <li><span>•</span>Focus on a niche strategy</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="about__2">
-                    <div class="about__2__left">
-                        <h2>Digitalization</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo odio, sagittis quis ornare quis.met, consectetur
-                        adipiscing elit. Aliquam leo odio, sagittis quis ornare quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Aliquam leo odio, sagittis.</p>
-                    </div>
-                    <div class="about__2__right">
-                        <img src="../assets/images/services-digitalization.png" alt="img">
-                    </div>
-                </div>
-                <div class="about__1">
-                    <div class="about__1__left">
-                        <img src="../assets/images/services-risk.png" alt="img">
-                    </div>
-                    <div class="about__1__right">
-                        <h2>Risk assessment</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo odio, sagittis quis ornare quis.met, consectetur
-                        adipiscing elit. Aliquam leo odio, sagittis quis ornare quis.</p>
-                        <ul>
-                            <li><span>•</span>Individual risk assessment</li>
-                            <li><span>•</span>Systems risk assessment</li>
-                            <li><span>•</span>Mathematical conceptualization</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="about__2">
-                    <div class="about__2__left">
-                        <h2>Artificial intelligence</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo odio, sagittis quis ornare quis.met, consectetur
-                        adipiscing elit. Aliquam leo odio, sagittis quis ornare quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Aliquam leo odio, sagittis.</p>
-                    </div>
-                    <div class="about__2__right">
-                        <img src="../assets/images/services-artificial.png" alt="img">
-                    </div>
-                </div>
-                <div class="about__1">
-                    <div class="about__1__left">
-                        <img src="../assets/images/services-smart.png" alt="img">
-                    </div>
-                    <div class="about__1__right">
-                        <h2>Smart Contracts</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo odio, sagittis quis ornare quis.met, consectetur
-                        adipiscing elit. Aliquam leo odio, sagittis quis ornare quis.</p>
-                        <ul>
-                            <li><span>•</span>Smart contract implementation</li>
-                            <li><span>•</span>Smart legal contracts</li>
-                            <li><span>•</span>Basic contract law</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="hero__right">
+              <img src="../assets/images/services-hero.png" alt="img">
+              <img class="hero__right__circle" src="../assets/images/service-circle.svg" alt=" /">
             </div>
-        </section>
-        <section id="support">
-            <div class="container__1320 support">
-                <h2 class="support__title">
-                    We help more than 1500 companies from all sectors
-                </h2>
-                <p class="support__paragraph">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-                    sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus
-                    commodo suscipit tellus et pellentesque.
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="container__1320">
+          <div class="about__1">
+            <div class="about__1__left">
+              <img src="../assets/images/services-business.png" alt="img" />
+            </div>
+            <div class="about__1__right">
+              <h2>Business strategy</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                leo odio, sagittis quis ornare quis.met, consectetur adipiscing
+                elit. Aliquam leo odio, sagittis quis ornare quis.
+              </p>
+              <ul>
+                <li><span>•</span>Cost strategy</li>
+                <li>
+                  <span>•</span>Differentiated product or service strategy
+                </li>
+                <li><span>•</span>Focus on a niche strategy</li>
+              </ul>
+            </div>
+          </div>
+          <div class="about__2">
+            <div class="about__2__left">
+              <h2>Digitalization</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                leo odio, sagittis quis ornare quis.met, consectetur adipiscing
+                elit. Aliquam leo odio, sagittis quis ornare quis. Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit. Aliquam leo odio,
+                sagittis.
+              </p>
+            </div>
+            <div class="about__2__right">
+              <img
+                src="../assets/images/services-digitalization.png"
+                alt="img"
+              />
+            </div>
+          </div>
+          <div class="about__1">
+            <div class="about__1__left">
+              <img src="../assets/images/services-risk.png" alt="img" />
+            </div>
+            <div class="about__1__right">
+              <h2>Risk assessment</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                leo odio, sagittis quis ornare quis.met, consectetur adipiscing
+                elit. Aliquam leo odio, sagittis quis ornare quis.
+              </p>
+              <ul>
+                <li><span>•</span>Individual risk assessment</li>
+                <li><span>•</span>Systems risk assessment</li>
+                <li><span>•</span>Mathematical conceptualization</li>
+              </ul>
+            </div>
+          </div>
+          <div class="about__2">
+            <div class="about__2__left">
+              <h2>Artificial intelligence</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                leo odio, sagittis quis ornare quis.met, consectetur adipiscing
+                elit. Aliquam leo odio, sagittis quis ornare quis. Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit. Aliquam leo odio,
+                sagittis.
+              </p>
+            </div>
+            <div class="about__2__right">
+              <img src="../assets/images/services-artificial.png" alt="img" />
+            </div>
+          </div>
+          <div class="about__1">
+            <div class="about__1__left">
+              <img src="../assets/images/services-smart.png" alt="img" />
+            </div>
+            <div class="about__1__right">
+              <h2>Smart Contracts</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                leo odio, sagittis quis ornare quis.met, consectetur adipiscing
+                elit. Aliquam leo odio, sagittis quis ornare quis.
+              </p>
+              <ul>
+                <li><span>•</span>Smart contract implementation</li>
+                <li><span>•</span>Smart legal contracts</li>
+                <li><span>•</span>Basic contract law</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="latest">
+        <div class="container__1320 support">
+          <h2 class="support__title">Latest Blog & News</h2>
+          <div class="support__row">
+            <div class="support__row__card">
+              <img src="../assets/images/service-card-1.png" alt="" />
+              <div class="support__row__card__content">
+                <h5>Why you have to digitalize in 2021</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur sit amet eros blandit, hendrerit elit et,
                 </p>
-                <div class="support__row">
-                    <div class="support__row__card">
-                        <img src="assets/images/home-support1.png" alt="" />
-                        <h5>Business strategy</h5>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Curabitur sit amet eros blandit, hendrerit elit et,
-                        </p>
-                        <div class="support__row__card__bottom">
-                            <a href="#">Learn More</a>
-                            <img src="assets/images/arrow-right.svg" alt="" />
-                        </div>
-                    </div>
-                    <div class="support__row__card">
-                        <img src="assets/images/home-support2.png" alt="" />
-                        <h5>Business strategy</h5>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Curabitur sit amet eros blandit, hendrerit elit et,
-                        </p>
-                        <div class="support__row__card__bottom">
-                            <a href="#">Learn More</a>
-                            <img src="assets/images/arrow-right.svg" alt="" />
-                        </div>
-                    </div>
-                    <div class="support__row__card">
-                        <img src="assets/images/home-support3.png" alt="" />
-                        <h5>Business strategy</h5>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Curabitur sit amet eros blandit, hendrerit elit et,
-                        </p>
-                        <div class="support__row__card__bottom">
-                            <a href="#">Learn More</a>
-                            <img src="assets/images/arrow-right.svg" alt="" />
-                        </div>
-                    </div>
+                <div class="support__row__card__bottom">
+                  <a href="#">Learn More</a>
+                  <img src="../assets/images/arrow-right.svg" alt="" />
                 </div>
+              </div>
             </div>
-        </section>
+            <div class="support__row__card">
+              <img src="../assets/images/service-card-2.png" alt="" />
+              <div class="support__row__card__content">
+                <h5>Our internal process and longerm vision</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur sit amet eros blandit, hendrerit elit et,
+                </p>
+                <div class="support__row__card__bottom">
+                  <a href="#">Learn More</a>
+                  <img src="../assets/images/arrow-right.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="support__row__card">
+              <img src="../assets/images/service-card-3.png" alt="" />
+              <div class="support__row__card__content">
+                <h5>Helping the next generation of leaders</h5>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur sit amet eros blandit, hendrerit elit et,
+                </p>
+                <div class="support__row__card__bottom">
+                  <a href="#">Learn More</a>
+                  <img src="../assets/images/arrow-right.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+    <script src="../js/common.js"></script>
+  </body>
 </html>
