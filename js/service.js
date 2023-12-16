@@ -2,8 +2,8 @@
 
 const loading = document.getElementById("loading");
 
-// const loadingDuration = 5100; // 2s
-const loadingDuration = 1; // 2s
+const loadingDuration = 5100; // 2s
+// const loadingDuration = 1; // 2s
 
 
 setTimeout(() => {
