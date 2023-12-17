@@ -20,6 +20,7 @@
       grid-template-columns: repeat(2, 1fr);
     }
     &__left {
+      padding-bottom: 80px;
       &__title {
         max-width: 576px;
         color: var.$text-color;
@@ -99,7 +100,7 @@
       }
     }
     &__right {
-      width: 118%;
+      max-width: 118%;
       @media (max-width: 1100px) {
         width: 100%;
       }

@@ -709,6 +709,9 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+#hero .hero__left {
+  padding-bottom: 80px;
+}
 #hero .hero__left__title {
   max-width: 576px;
   color: #1D3444;
@@ -808,7 +811,7 @@ footer {
   }
 }
 #hero .hero__right {
-  width: 118%;
+  max-width: 118%;
 }
 @media (max-width: 1100px) {
   #hero .hero__right {
