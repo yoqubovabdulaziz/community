@@ -674,9 +674,20 @@ footer {
   border-radius: 0 20px 0 0;
   background-color: #F58A07;
 }
+@media (max-width: 1400px) {
+  .footer__left__decoration {
+    height: 60px;
+    width: 200px;
+  }
+}
 @media (max-width: 1100px) {
   .footer__left__decoration {
     height: 80px;
+  }
+}
+@media (max-width: 800px) {
+  .footer__left__decoration {
+    height: 60px;
   }
 }
 @media (max-width: 400px) {
@@ -1594,5 +1605,7 @@ video {
   top: 20px;
   left: 20px;
   font-size: 40px;
+}
+.anim h1 span {
   color: red;
 }
