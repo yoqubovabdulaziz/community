@@ -203,7 +203,9 @@ button {
           align-items: center;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
-  background-color: rgb(66, 49, 142);
+  background-color: #F58A07;
+  -webkit-box-shadow: 0 0 10px 5px black;
+          box-shadow: 0 0 10px 5px black;
   z-index: 100;
 }
 #mode-btn img {
@@ -981,6 +983,7 @@ footer {
   top: 0;
   left: 0;
   background: #F58A07;
+  mix-blend-mode: multiply;
   z-index: 1;
   opacity: 0;
   border-radius: 20px 0px 0px 20px;

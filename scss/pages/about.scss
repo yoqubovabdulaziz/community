@@ -153,6 +153,7 @@
     top: 0;
     left: 0;
     background: var.$primary-color;
+    mix-blend-mode: multiply;
     z-index: 1;
     opacity: 0;
     border-radius: 20px 0px 0px 20px;
