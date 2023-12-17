@@ -237,7 +237,8 @@ button {
 .dark #energy,
 .dark #service,
 .dark #latest,
-.dark #about {
+.dark #about,
+.dark #dream {
   background-color: black;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -251,7 +252,9 @@ button {
 .dark #service .service *,
 .dark #latest .support *,
 .dark #hero *,
-.dark #about * {
+.dark #about *,
+.dark #dream h2,
+.dark #dream p {
   color: #FFF;
 }
 

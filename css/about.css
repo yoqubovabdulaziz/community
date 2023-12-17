@@ -237,7 +237,8 @@ button {
 .dark #energy,
 .dark #service,
 .dark #latest,
-.dark #about {
+.dark #about,
+.dark #dream {
   background-color: black;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -251,7 +252,9 @@ button {
 .dark #service .service *,
 .dark #latest .support *,
 .dark #hero *,
-.dark #about * {
+.dark #about *,
+.dark #dream h2,
+.dark #dream p {
   color: #FFF;
 }
 
@@ -1410,7 +1413,7 @@ footer {
           align-items: center;
   gap: 17px;
 }
-.dream__box__icon {
+.dream__box__img {
   width: 50px;
   height: 50px;
   display: -webkit-box;
