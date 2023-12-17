@@ -1595,17 +1595,10 @@ video {
           animation-delay: 4.2s;
 }
 
-.anim {
-  overflow: hidden;
-  position: relative;
+.animation {
+  background: black;
 }
-.anim h1 {
-  position: absolute;
-  color: #FFF;
-  top: 20px;
-  left: 20px;
-  font-size: 40px;
-}
-.anim h1 span {
-  color: red;
+
+#canvas {
+  width: 100%;
 }
