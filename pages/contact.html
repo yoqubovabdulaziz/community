@@ -8,6 +8,99 @@
     <link rel="stylesheet" href="../css/contact.min.css">
 </head>
 <body>
-    
+  <div class="loading-box" id="loading">
+  <p class="loading-title">Loading</p>
+  <div class="loading-circle">
+    <p class="loading-count"><span id="loadingNumber">0</span>%</p>
+  </div>
+</div>
+ <button id="mode-btn">
+      <img src="../assets/images/dark.svg" alt="dark img">
+    </button>
+     <a id="backtop" href="#">
+      <img src="../assets/images/top.svg" alt="arrow"/>
+    </a>
+        <header id="navbar">
+      <nav class="container__1320 nav">
+        <a href="#">
+          <img src="../assets/images/nav-logo.svg" alt="logotip"/>
+        </a>
+        <ul class="nav__list">
+          <li><a href="pages/about.html">About Us</a></li>
+          <li><a href="pages/careers-1.html">Careers</a></li>
+          <li><a href="pages/service.html">Services</a></li>
+          <li><a href="pages/blog.html">Blog</a></li>
+          <li><a href="pages/contact.html">Contact us</a></li>
+          <li><a class="nav-clone" href="#">Clone project</a></li>
+        </ul>
+        <div class="nav__res">
+          <button id="navbar-open">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <section class="contact py-[128px]" id="contact">
+            <div class="container__1320">
+                <div class="contact__wrapper flex justify-between gap-[50px]">
+                    <div class="contact__left w-1/2">
+                        <h1 class="contact__letf__title text-[48px] text-[#1d3444] font-semibold">Have a question ? Let’s get in touch with us.</h1>
+                        <p class="text text-[#5b5b5b] text-[18px] mt-[24px] font-medium">Fill up the Form and ou team will get back to within 24 hrs</p>
+                        <form action="#" method="post" class="mt-[67px]">
+                          <!-- Name Input -->
+                          <div class="mb-4">
+                            <!-- <label for="name" class="block text-gray-700 text-sm font-bold mb-2">First Name</label>/ -->
+                            <input type="text" id="name" name="name" class="w-full py-[18px] px-[32px] px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500" required placeholder="Enter your first name">
+                          </div>
+                          <div class="mb-4">
+                            <!-- <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Last Name</label> -->
+                            <input type="text" id="name" name="name" class="w-full py-[18px] px-[32px] px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500" required placeholder="Enter your last name">
+                          </div>
+                    
+                          <!-- Email Input -->
+                          <div class="mb-4">
+                            <!-- <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label> -->
+                            <input type="email" id="email" name="email" class="w-full py-[18px] px-[32px] px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500" required placeholder="Email address">
+                          </div>
+                    
+                          <!-- Message Textarea -->
+                          <div class="mb-6">
+                            <!-- <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label> -->
+                            <textarea id="message" name="message" rows="4" class="w-full py-[18px] px-[32px] py-2 border rounded-md focus:outline-none focus:border-blue-500" required placeholder="Type message"></textarea>
+                          </div>
+                    
+                          <!-- Submit Button -->
+                          <button type="submit" class="bg-[#F58A07] text-white px-[32px] py-[18px] rounded-[30px] hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue active:bg-blue-800">
+                            Submit
+                          </button>
+                        </form> 
+                    </div>
+                    <div class="contact__right w-1/2">
+                        <div class="contact__right__info flex gap-[76px]">
+                            <div class="location">
+                                <h3 class="text-[24px] font-medium text-[#0d1317]">Location</h3>
+                                <p class="text text-[#5b5b5b] text-[18px] mt-[24px] font-medium">DLF Cybercity, Bhubaneswar, <br> India, &52050</p>
+                            </div>
+                            <div class="contact">
+                                <h3 class="text-[24px] font-medium text-[#0d1317]">Contact Us</h3>
+                                <p class="text text-[#5b5b5b] text-[18px] mt-[24px] font-medium">020 7993 2905 <br>hi@finsweet.com</p>
+                            </div>
+                        </div>
+                        <iframe
+                            class="world__map w-full rounded-[10px] mt-[120px]"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191885.25298617416!2d69.2793667!3d41.28259745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2sTashkent!5e0!3m2!1sen!2s!4v1702135951541!5m2!1sen!2s"
+                            style="border: 0"
+                            height="430px"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../js/contact.js"></script>
 </body>
 </html>

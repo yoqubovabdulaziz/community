@@ -1,2 +1,99 @@
 @use "../global";
 @use "../utils/variables" as var;
+@use "loading";
+@use "backtop";
+
+h1 {
+    max-width: 561px;
+    font-family: Poppins600;
+    line-height: 64px;
+    letter-spacing: -1.44px;
+}
+h3 {
+    padding-top: 15px;
+    font-family: Poppins500;
+    line-height: 30px;
+    letter-spacing: -0.72px;
+}
+.text {
+    font-family: Poppins500;
+    line-height: 30px;
+}
+
+.dark main {
+    background-color: var.$dark-color;
+    transition: 0.5s;
+}
+.dark label {
+    color: var.$white-color;
+}
+.dark h3 {
+    color: #fff;
+}
+.dark p {
+    color: var.$white-color;
+}
+.dark h1 {
+    color: #fff;
+}
+.dark input,
+iframe,
+textarea {
+    box-shadow: 0 3px 5px 5px #fff;
+}
+.dark .nav-clone {
+    background: #fff !important;
+    padding: 12px 24px !important;
+    text-shadow: 0 0 5px 5px #fff;
+}
+
+body {
+    animation: changeColor 12s infinite alternate;
+}
+
+@keyframes changeColor {
+    0% {
+        background-color: #3498db; /* Start color */
+    }
+    25% {
+        background-color: #dbdb34; /* Start color */
+    }
+    50% {
+        background-color: #34db4d; /* Start color */
+    }
+    75% {
+        background-color: #677bec; /* Start color */
+    }
+    100% {
+        background-color: #e16a5c; /* End color */
+    }
+}
+@media (max-width: 800px) {
+    .contact__wrapper {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width: 850px) {
+    .contact__letf__title {
+        font-size: 32px;
+    }
+}
+@media (max-width: 300px) {
+    .contact__letf__title {
+        width: 100%;
+        font-size: 16px;
+        font-family: Poppins600;
+        line-height: 24px;
+    }
+    form{
+        width: 100%;
+    }
+    iframe{
+        width: 100%;
+    }
+    input{
+        width: 100%;
+    }
+}
