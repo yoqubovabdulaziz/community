@@ -67,7 +67,7 @@ h3 {
 }
 @media (max-width: 350px) {
     .privacy {
-        padding: 80px 0;
+        padding: 120px 0;
         h1 {
             font-size: 38px;
         }
@@ -90,15 +90,24 @@ h3 {
     color: rgb(252, 201, 17);
 }
     body {
-            animation: changeColor 5s infinite alternate;
+            animation: changeColor 12s infinite alternate;
         }
 
         @keyframes changeColor {
             0% {
-                background-color: #3498db; /* Start color */
+                background-color: #3498db; 
+            }
+            25% {
+                background-color: #34db3c; 
+            }
+            50% {
+                background-color: #5e53de; 
+            }
+            75% {
+                background-color: #de4bad; 
             }
             100% {
-                background-color: #e74c3c; /* End color */
+                background-color: #e74c3c; 
             }
         }
       

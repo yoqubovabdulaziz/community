@@ -53,19 +53,19 @@ body {
 
 @keyframes changeColor {
     0% {
-        background-color: #3498db; /* Start color */
+        background-color: #3498db;
     }
     25% {
-        background-color: #dbdb34; /* Start color */
+        background-color: #dbdb34;
     }
     50% {
-        background-color: #34db4d; /* Start color */
+        background-color: #34db4d;
     }
     75% {
-        background-color: #677bec; /* Start color */
+        background-color: #677bec;
     }
     100% {
-        background-color: #e16a5c; /* End color */
+        background-color: #e16a5c;
     }
 }
 @media (max-width: 800px) {
@@ -79,6 +79,18 @@ body {
     .contact__letf__title {
         font-size: 32px;
     }
+    .contact__right {
+        width: 100%;
+        flex-direction: column;
+    }
+    .contact__left {
+        width: 100%;
+        flex-direction: column;
+    }
+    .contact__right__info {
+        display: flex;
+        justify-content: center;
+    }
 }
 @media (max-width: 300px) {
     .contact__letf__title {
@@ -87,13 +99,35 @@ body {
         font-family: Poppins600;
         line-height: 24px;
     }
-    form{
+    .contact__right {
+        width: 100%;
+        flex-direction: column;
+    }
+    .contact__left {
+        width: 100%;
+        flex-direction: column;
+    }
+    .contact__right__info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    form button{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+       padding: 14px 28px !important;
+
+    }
+    form {
         width: 100%;
     }
-    iframe{
+    iframe {
         width: 100%;
     }
-    input{
+    input {
         width: 100%;
     }
 }
