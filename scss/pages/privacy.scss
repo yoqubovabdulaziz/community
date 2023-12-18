@@ -5,109 +5,109 @@
 @use "backtop";
 
 .privacy {
-    padding: 128px 0;
-    h1 {
-        font-family: Poppins600;
-        letter-spacing: -1.92px;
-    }
+  padding: 128px 0;
+  h1 {
+    font-family: Poppins600;
+    letter-spacing: -1.92px;
+  }
 }
 p {
-    font-family: Poppins500;
-    font-size: 16px;
-    line-height: 28px;
+  font-family: Poppins500;
+  font-size: 16px;
+  line-height: 28px;
 }
 h3 {
-    font-family: Poppins500;
-    line-height: 30px;
-    letter-spacing: -0.72px;
+  font-family: Poppins500;
+  line-height: 30px;
+  letter-spacing: -0.72px;
 }
 .bg-blue-500 p {
-    color: #f5e4e4;
+  color: #f5e4e4;
 }
 .bg-blue-500 h3 {
-    color: rgb(215, 178, 83);
+  color: rgb(215, 178, 83);
 }
 .bg-blue-500 h1 {
-    color: #f5e4e4;
+  color: #f5e4e4;
 }
 .bg-red-500 p {
-    color: #f5e4e4;
+  color: #f5e4e4;
 }
 .bg-red-500 h1 {
-    color: #f5e4e4;
+  color: #f5e4e4;
 }
 .bg-red-500 h3 {
-    color: rgb(252, 201, 17);
+  color: rgb(252, 201, 17);
 }
 .bg-teal-500 p {
-    color: #f5e4e4;
+  color: #f5e4e4;
 }
 .bg-teal-500 h3 {
-    color: rgb(215, 178, 83);
+  color: rgb(215, 178, 83);
 }
 .bg-teal-500 h1 {
-    color: #f5e4e4;
+  color: #f5e4e4;
 }
 .bg-green-500 h1 {
-    color: #f5e4e4;
+  color: #f5e4e4;
 }
 .bg-green-500 p {
-    color: #f5e4e4;
+  color: #f5e4e4;
 }
 .bg-green-500 h3 {
-    color: rgb(252, 201, 17);
+  color: rgb(252, 201, 17);
 }
 @media (max-width: 450px) {
-    .privacy h1 {
-        font-size: 48px;
-    }
-    p {
-        font-size: 16px;
-    }
+  .privacy h1 {
+    font-size: 48px;
+  }
+  p {
+    font-size: 16px;
+  }
 }
 @media (max-width: 350px) {
-    .privacy {
-        padding: 120px 0;
-        h1 {
-            font-size: 38px;
-        }
-        p {
-            font-size: 14px;
-        }
+  .privacy {
+    padding: 120px 0;
+    h1 {
+      font-size: 38px;
     }
+    p {
+      font-size: 14px;
+    }
+  }
 }
-.dark main{
- background-color: var.$dark-color;
+.dark main {
+  background-color: var.$dark-color;
   transition: 0.5s;
 }
 .dark h1 {
-    color: #f5e4e4;
+  color: #f5e4e4;
 }
 .dark p {
-    color: #f5e4e4;
+  color: #f5e4e4;
 }
 .dark h3 {
-    color: rgb(252, 201, 17);
+  color: rgb(252, 201, 17);
 }
-    body {
-            animation: changeColor 12s infinite alternate;
-        }
 
-        @keyframes changeColor {
-            0% {
-                background-color: #3498db; 
-            }
-            25% {
-                background-color: #34db3c; 
-            }
-            50% {
-                background-color: #5e53de; 
-            }
-            75% {
-                background-color: #de4bad; 
-            }
-            100% {
-                background-color: #e74c3c; 
-            }
-        }
-      
+// body {
+//   animation: changeColor 12s infinite alternate;
+// }
+
+// @keyframes changeColor {
+//   0% {
+//     background-color: #3498db;
+//   }
+//   25% {
+//     background-color: #34db3c;
+//   }
+//   50% {
+//     background-color: #5e53de;
+//   }
+//   75% {
+//     background-color: #de4bad;
+//   }
+//   100% {
+//     background-color: #e74c3c;
+//   }
+// }

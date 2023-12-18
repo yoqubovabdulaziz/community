@@ -47,27 +47,27 @@ textarea {
     text-shadow: 0 0 5px 5px #fff;
 }
 
-body {
-    animation: changeColor 12s infinite alternate;
-}
+// body {
+//     animation: changeColor 12s infinite alternate;
+// }
 
-@keyframes changeColor {
-    0% {
-        background-color: #3498db;
-    }
-    25% {
-        background-color: #dbdb34;
-    }
-    50% {
-        background-color: #34db4d;
-    }
-    75% {
-        background-color: #677bec;
-    }
-    100% {
-        background-color: #e16a5c;
-    }
-}
+// @keyframes changeColor {
+//     0% {
+//         background-color: #3498db;
+//     }
+//     25% {
+//         background-color: #dbdb34;
+//     }
+//     50% {
+//         background-color: #34db4d;
+//     }
+//     75% {
+//         background-color: #677bec;
+//     }
+//     100% {
+//         background-color: #e16a5c;
+//     }
+// }
 @media (max-width: 800px) {
     .contact__wrapper {
         flex-wrap: wrap;
