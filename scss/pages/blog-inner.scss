@@ -1,2 +1,88 @@
 @use "../global";
 @use "../utils/variables" as var;
+@use "../base/fonts" as fonts;
+
+* {
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+p {
+    margin-bottom: 24px;
+}
+
+h2 {
+    color: #1D3444;
+    font-size: 44px !important;
+    font-weight: 600 !important;
+    line-height: 72px;
+    letter-spacing: -1.92px;
+    margin-bottom: 32px;
+}
+
+h3 {
+    font-size: 37px !important;
+    font-weight: 600 !important;
+    color: #0D1317;
+    line-height: 56px;
+    letter-spacing: -1.44px;
+    margin-bottom: 24px;
+}
+
+main {
+    padding: 120px 0;
+}
+
+ .header-img {
+    width: 100%;
+    max-width: 1280px;
+    max-height: 631px;
+    margin-bottom: 80px;
+ }
+
+.blog-inner__profile {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+ 
+    margin-bottom: 25px;
+    img {
+        margin-right: 10px;
+        max-width: 32px;
+        max-height: 32px;
+    }
+    p {
+        display: block;
+        margin-right: 25px;
+        color: #394149;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+    }
+}
+
+
+@media (min-width:301px) {
+    .blog-inner__profile {
+        display: flex;
+        align-items: center;
+        p {
+            display: inline-block;
+        }
+    }
+}
+
+
+@media (min-width:410px) {
+    h2 {
+    font-size: 64px !important;
+    font-weight: 600 !important;
+    }
+}
+
+@media (min-width:410px) {
+    h3 {
+    font-size: 48px !important;
+    font-weight: 600 !important;
+    }
+}
