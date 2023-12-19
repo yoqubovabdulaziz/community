@@ -90,6 +90,13 @@ textarea {
         justify-content: center;
     }
 }
+@media (max-width: 800px) {
+    .contact__wrapper {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
 @media (max-width: 750px) {
     .contact__letf__title {
         font-size: 32px;
@@ -150,13 +157,6 @@ textarea {
     }
     .contact__right__info {
         display: flex;
-        justify-content: center;
-    }
-}
-@media (max-width: 800px) {
-    .contact__wrapper {
-        flex-wrap: wrap;
-        align-items: center;
         justify-content: center;
     }
 }
