@@ -240,7 +240,8 @@ button {
 .dark #about,
 .dark #dream,
 .dark #blog-inner__header,
-.dark #blog-inner__text {
+.dark #blog-inner__text,
+.dark #home {
   background-color: black;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -258,13 +259,15 @@ button {
 .dark #dream h2,
 .dark #dream p,
 .dark #blog-inner__header *,
-.dark #blog-inner__text * {
+.dark #blog-inner__text *,
+.dark #home * {
   color: #FFF;
 }
 
 .dark #solution .solution__row__card,
 .dark #service .service,
-.dark #latest .support__row__card {
+.dark #latest .support__row__card,
+.dark .row-card .card {
   background: #333;
 }
 
