@@ -238,7 +238,9 @@ button {
 .dark #service,
 .dark #latest,
 .dark #about,
-.dark #dream {
+.dark #dream,
+.dark #blog-inner__header,
+.dark #blog-inner__text {
   background-color: black;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -254,7 +256,9 @@ button {
 .dark #hero *,
 .dark #about *,
 .dark #dream h2,
-.dark #dream p {
+.dark #dream p,
+.dark #blog-inner__header *,
+.dark #blog-inner__text * {
   color: #FFF;
 }
 
@@ -757,7 +761,6 @@ footer {
 .hero__right__hover {
   width: 180px;
   height: 100%;
-  left: -100%;
   left: -200px;
   position: absolute;
   background-color: #F58A07;

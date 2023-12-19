@@ -164,7 +164,9 @@ button {
 .dark #service,
 .dark #latest,
 .dark #about,
-.dark #dream {
+.dark #dream,
+.dark #blog-inner__header,
+.dark #blog-inner__text {
   background-color: var.$dark-color;
   transition: 0.5s;
 }
@@ -179,7 +181,9 @@ button {
 .dark #hero *,
 .dark #about *,
 .dark #dream h2,
-.dark #dream p {
+.dark #dream p,
+.dark #blog-inner__header *,
+.dark #blog-inner__text * {
   color: var.$white-color;
 }
 
