@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @font-face {
   font-family: Poppins400;
   src: url(../../assets/fonts/Poppins/Poppins-Regular.ttf);
@@ -700,5 +701,172 @@ footer {
   .footer__left__decoration {
     height: 50px;
     width: 200px;
+  }
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#home {
+  background: #DCEAF5;
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  row-gap: 30px;
+  padding: 250px 0 150px 0;
+}
+@media (min-width: 1000px) {
+  .home {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.home-left-person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.text {
+  color: #394149;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.home-title {
+  padding: 15px 0;
+  max-width: 527px;
+  color: #1D3444;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: -1.92px;
+}
+
+.home-text {
+  max-width: 559px;
+  padding-bottom: 20px;
+  color: #5B5B5B;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.home-left-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3px;
+}
+
+.home-left-link a {
+  color: #F58A07;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 106.5%;
+}
+
+.home-right img {
+  width: 100%;
+}
+
+.posts {
+  padding: 120px 0 64px 0;
+  color: #0D1317;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: -1.44px;
+  text-transform: capitalize;
+}
+
+.card {
+  max-width: 400px;
+  border-radius: 20px 20px 20px 20px;
+  background: #EDF7FF;
+}
+
+.card-title {
+  padding: 30px 30px 16px 30px;
+  color: #0D1317;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: -0.72px;
+}
+
+.card-list {
+  padding: 0 32px 24px 32px;
+  color: #5B5B5B;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.card-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 32px 32px;
+}
+
+.card-link a {
+  color: #F58A07;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 106.5%;
+}
+
+.row-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  gap: 30px;
+}
+@media (min-width: 800px) {
+  .row-card {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1000px) {
+  .row-card {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
