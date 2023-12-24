@@ -242,7 +242,8 @@ button {
 .dark #dream,
 .dark #blog-inner__header,
 .dark #blog-inner__text,
-.dark #home {
+.dark #home,
+.dark #second {
   background-color: black;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -261,14 +262,16 @@ button {
 .dark #dream p,
 .dark #blog-inner__header *,
 .dark #blog-inner__text *,
-.dark #home * {
+.dark #home *,
+.dark #second * {
   color: #FFF;
 }
 
 .dark #solution .solution__row__card,
 .dark #service .service,
 .dark #latest .support__row__card,
-.dark .row-card .card {
+.dark .row-card .card,
+.dark #second .sec-card {
   background: #333;
 }
 
@@ -276,7 +279,8 @@ button {
 .dark #energy .energy h6,
 .dark #service .service a,
 .dark #latest .support__row__card a,
-.dark #latest .support__row__card:hover * {
+.dark #latest .support__row__card:hover *,
+.dark #second a {
   color: #F58A07;
 }
 
