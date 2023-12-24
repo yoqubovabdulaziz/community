@@ -709,3 +709,129 @@ footer {
     width: 200px;
   }
 }
+
+.first {
+  padding-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.first .first-left {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 24px;
+}
+.first .first-left h2 {
+  color: #1D3444;
+  font-family: Poppins600;
+  font-size: 64px;
+  font-style: normal;
+  line-height: 72px;
+  letter-spacing: -1.92px;
+}
+.first .first-left p {
+  color: #5B5B5B;
+  font-family: Poppins500;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 30px;
+}
+.first .first-left button {
+  background-color: #F58A07;
+  width: 180px;
+  height: 54px;
+  border-radius: 27px;
+  color: white;
+  font-family: Poppins600;
+  font-size: 16px;
+}
+.first .first-left button:hover {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  background-color: #ff4d00;
+}
+.first .first-right {
+  width: 50%;
+  position: relative;
+}
+.first .first-right .shram {
+  border-radius: 20px 0px 0px 20px;
+  background: #F58A07;
+  mix-blend-mode: multiply;
+  width: 180px;
+  height: 650px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  position: absolute;
+}
+.first .first-right .main-circle {
+  position: absolute;
+  top: 74px;
+  right: -40px;
+}
+.first .first-right .main-img {
+  width: 620px;
+}
+
+.second {
+  margin-top: 130px;
+}
+.second h2 {
+  color: #0D1317;
+  font-family: Poppins600;
+  font-size: 48px;
+  font-style: normal;
+  line-height: 56px;
+  letter-spacing: -1.44px;
+  margin-bottom: 65px;
+}
+.second .second-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.second .second-cards .sec-card {
+  width: 400px;
+  height: 181px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 20px;
+  background-color: #DCEAF5;
+  padding-top: 32px;
+  padding-left: 40px;
+}
+.second .second-cards .sec-card h3 {
+  margin-bottom: 10px;
+  color: #0D1317;
+  font-family: Poppins500;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.72px;
+}
+.second .second-cards .sec-card p {
+  margin-bottom: 32px;
+  color: #394149;
+  font-family: Poppins500;
+  font-size: 18px;
+  line-height: 28px;
+}
+.second .second-cards .sec-card button {
+  color: #F58A07;
+  font-family: Poppins500;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 106.5%;
+}
